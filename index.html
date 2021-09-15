@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ragnarok Email Template</title>
+  <style type="text/css">
+    /* Default settup */
+    body {
+      margin: 0;
+      background-color: #cccccc;
+      font-family: sans-serif;
+}
+
+    table {
+      border-spacing: 0;
+}
+
+    td {
+      padding: 0;
+}
+
+    img {
+      border: 0;
+}
+/*  */
+    .wrapper {
+      width: 100%;
+      table-layout: fixed;
+      background-color: #cccccc;
+      text-align: center;
+}
+
+    .main {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 800px;
+      background-color: #ffffff;
+      border-spacing: 0;
+}
+/* LOGO CSS*/
+
+    .logo-container {
+      text-align: center;
+      padding: 15px;
+}
+/* DESCRIPTION CSS */
+
+    .description {
+      text-align: left;
+      padding: 20px 50px 10px 50px;
+      font-size: 17px;
+}
+
+    .description p {
+      line-height: 25px;
+}
+/* COLUMNS CSS */
+
+    .three-columns {
+      text-align: center;
+}
+
+    .three-columns .columns {
+      width: 100%;
+      max-width: 200px;
+      display: inline-block;
+      vertical-align: top;
+}
+
+    .three-columns .padding {
+      padding: 10px;
+}
+
+    .content {
+      line-height: 25px;
+}
+/* LINE CSS */
+
+    .line {
+      height: 2px;
+      background: black;
+}
+
+    .line-container {
+      padding: 20px 25px 20px 25px;
+}
+/* BUTTON CSS */
+
+    .button-container {
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 50px;
+}
+
+    .button {
+      background-color: rgb(244,
+  170,
+  60);
+      color: #ffffff;
+      text-decoration: none;
+      padding: 12px 70px;
+      border-radius: 8px;
+}
+/* FOOTER CSS */
+
+    .footer-unsubscribe {
+      padding-top: 25px;
+}
+
+    .footer-unsubscribe a {
+      color: black;
+}
+
+    .footer-container {
+      text-align: center;
+      padding-top: 25px;
+      font-size: 14px;
+}
+/* SOCIAL MEDIA CSS */
+
+    .social-media {
+      text-align: center;
+}
+
+    .social-media img {
+      padding-left: 5px;
+      padding-right: 5px;
+}
+/* Media queries */
+/* 
+  ##Device = Tablets, Ipads, Mobiles
+  ##Screen = B/w 481px to 767px
+*/
+
+    @media (min-width: 481px) and (max-width: 767px) {
+      .logo-image {
+        width: 150px;
+  }
+}
+
+    .footer-container {
+      font-size: 12px;
+}
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      .logo-image {
+        width: 100px;
+  }
+
+      .description {
+        font-size: 15px;
+  }
+
+      .footer-container {
+        font-size: 12px;
+  }
+
+      .description p {
+        line-height: 20px;
+  }
+
+      .button {
+        padding: 10px 50px;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <table class="main" align="center">
+      <!-- LOGO -->
+      <tr>
+        <td>
+          <table width="100%">
+            <tr>
+              <td class="logo-container">
+                <img class="logo-image" alt="Logo" title="logo" width="300px"
+                  src="https://d2axdqolvqmdvx.cloudfront.net/8f0f11d6-f57d-40bb-8ecf-afb52100885a/Logo.jpg" />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- MAIN IMAGE -->
+      <tr>
+        <td>
+          <img alt="main-image" style="max-width: 100%;" width="800px"
+            src="https://d2axdqolvqmdvx.cloudfront.net/dd904b0c-e7ab-43cb-9aea-59da5f58181b/Hero1.jpg" />
+        </td>
+      </tr>
+      <!-- DESCRIPTION -->
+      <tr>
+        <td>
+          <table width="100%">
+            <tr>
+              <td class="description">
+                <p>As an ecommerce business with a new concept, NUTSóLa was in need
+                  of a custom content. So they reached out to Ragnarok to produce their
+                  vides; code and design their ecommerce subscription website; and
+                  handele their email strategy and creative.
+                </p>
+                <p>Ragnarok also produced content for NUTSóLa's Kickstarter.
+                  To get taste of "The Original DIY Superfood Bar™"
+                  and more of our work, click the button below.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- PRODUCTS -->
+      <tr>
+        <td>
+
+          <table width="100%">
+            <tr>
+              <td class="three-columns">
+
+                <!--  COLUMN 1 -->
+                <table class="columns">
+                  <tr>
+                    <td class="padding">
+
+                      <table class="content">
+                        <tr>
+                          <td>
+
+                            <a href="{{products.[0].url}}"><img src="{{products.[0].imageUrl}}" alt="" width="200"
+                                style="max-width: 200px;" /></a>
+                            <div style="font-size: 17px; font-weight: bold;">{
+  {products.[
+      0
+    ].brand
+  }
+}</div>
+                            <div>{
+  {products.[
+      0
+    ].name
+  }
+}</div>
+
+                          </td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- COLUMN 2 -->
+                <table class="columns">
+                  <tr>
+                    <td class="padding">
+
+                      <table class="content">
+                        <tr>
+                          <td>
+
+                            <a href="{{products.[1].url}}"><img src="{{products.[1].imageUrl}}" alt="" width="200"
+                                style="max-width: 200px;" /></a>
+                            <div style="font-size: 17px; font-weight: bold;">{
+  {products.[
+      1
+    ].brand
+  }
+}</div>
+                            <div>{
+  {products.[
+      1
+    ].name
+  }
+}</div>
+
+                          </td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- COLUMN 3 -->
+                <table class="columns">
+                  <tr>
+                    <td class="padding">
+
+                      <table class="content">
+                        <tr>
+                          <td>
+
+                            <a href="{{products.[2].url}}"><img src="{{products.[2].imageUrl}}" alt="" width="200"
+                                style="max-width: 200px;" /></a>
+                            <div style="font-size: 17px; font-weight: bold;">{
+  {products.[
+      2
+    ].brand
+  }
+}</div>
+                            <div>{
+  {products.[
+      2
+    ].name
+  }
+}</div>
+
+                          </td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+
+              </td>
+            </tr>
+
+          </table>
+        </td>
+      </tr>
+
+      <!-- LINE -->
+
+      <tr>
+        <td>
+          <table width="100%">
+            <tr>
+              <td class="line-container">
+                <div class="line"></div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- BUTTON -->
+
+      <tr>
+        <td>
+          <table width="100%">
+            <tr>
+              <td class="button-container">
+                <a href="https://nutsola.com/" class="button">LEARN MORE</a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SOCIAL MEDIA ICONS -->
+
+      <tr>
+        <td>
+          <table width="100%">
+            <tr>
+              <td class="social-media">
+                <a href="#"><img width="32"
+                    src="https://d2axdqolvqmdvx.cloudfront.net/26da005e-4e5c-4aa4-84bc-bf7eecf83d4c/facebook.png"
+                    alt="facebook"></a>
+                <a href=""><img width="32"
+                    src="https://d2axdqolvqmdvx.cloudfront.net/4c3c2848-11bb-4de0-aff6-e4c2d38f3c49/twitter.png"
+                    alt=""></a>
+                <a href="#"><img width="32"
+                    src="https://d2axdqolvqmdvx.cloudfront.net/f22b2a33-272d-4b46-b250-c701bb94e669/instagram.png"
+                    alt="twiter"></a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- FOOTER INFORMATION -->
+
+      <tr>
+        <td>
+          <table width="100%">
+            <tr>
+              <td class="footer-container">
+                <p>© 2019 Ragnarok, Inc. All rights reserved.</p>
+                <p>481 8th Avenue, #1012, New York, NY 10001</p>
+                <p class="footer-unsubscribe">Not interested in receiving updates from us?<a
+                    href="{{unsubscribeUrl}}{{hostedUnsubscribeUrl}}{{unsubscribedMessageTypeUrl}}">unsubscribe</a></p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+    </table>
+
+  </div>
+
+</body>
+
+</html>
